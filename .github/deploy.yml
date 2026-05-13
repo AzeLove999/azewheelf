@@ -33,6 +33,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Debug dist folder
+        run: ls -la dist/ && ls -la dist/assets/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
