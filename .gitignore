@@ -1,0 +1,16 @@
+# Зависимости
+node_modules/
+
+# Сборка
+dist/
+.vite/
+.vite-temp/
+
+# Окружение
+.env
+.env.local
+.env.*.local
+
+# Системные
+.DS_Store
+Thumbs.db
