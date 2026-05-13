@@ -15,13 +15,12 @@ function createTickBuffer(ctx) {
 // ── Sound packs ──
 export const SOUND_PACKS = {
   classic:  { label: 'Без музыки' },
-  melstroy: { label: 'Мелстрой',   spinSrc: '/sounds/melstroy.mp3' },
-  zhdun:    { label: 'Ждун',       spinSrc: '/sounds/zhdun.mp3' },
-
-  baraban:  { label: 'Барабан',     spinSrc: '/sounds/baraban.mp3' },
+  melstroy: { label: 'Мелстрой',   spinSrc: `${import.meta.env.BASE_URL}sounds/melstroy.mp3` },
+  zhdun:    { label: 'Ждун',       spinSrc: `${import.meta.env.BASE_URL}sounds/zhdun.mp3` },
+  baraban:  { label: 'Барабан',     spinSrc: `${import.meta.env.BASE_URL}sounds/baraban.mp3` },
 };
 
-const WIN_MP3_SRC = '/sounds/rizz.mp3';
+const WIN_MP3_SRC = `${import.meta.env.BASE_URL}sounds/rizz.mp3`;
 
 export function useSound() {
   const audioCtxRef = useRef(null);

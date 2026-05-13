@@ -10,7 +10,7 @@ export function useGroups() {
   // Fetch groups from JSON
   useEffect(() => {
     setLoading(true);
-    fetch('/data/groups.json')
+    fetch(`${import.meta.env.BASE_URL}data/groups.json`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to load groups');
         return res.json();
